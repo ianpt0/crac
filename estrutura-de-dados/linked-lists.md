@@ -35,7 +35,6 @@ valor. Posteriormente o definiremos como nulo.
 
 Uma observação importante é que o valor None representa que, de fato,
 não existe um próximo objeto Node.
-:::
 
 
 ``` python
@@ -100,9 +99,9 @@ dados. Até a próxima!
 Ian Sobral
 
 [Meu Linkedin](https://www.linkedin.com/in/ian-sobral-0b54701a9/)
-:::
 
-::: {.cell .code execution_count="12"}
+
+
 ``` python
 # Bibliografia e referências:
 # Desafio https://www.youtube.com/mycodeschool
@@ -111,4 +110,4 @@ Ian Sobral
 # Artigo https://medium.com/real-algorithms/linked-list-c-python-776ee340a357
 
 ```
-:::
+
