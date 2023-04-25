@@ -1,81 +1,31 @@
+As linguagens de programação oferecem diferentes maneiras de armazenar e acessar dados. Exemplos comuns são as arrays, listas, mapas, entre outros.
+
+Através delas, armazenamos os elementos em localizações de memória contínua, ou seja, qualquer elemento em uma Array pode ser localizado em tempo constante O(1), com menor complexidade e, consequentemente, oferecendo rapidez e possibilitando o menor tempo de busca possível. Isso é, enquanto soubermos examente o index do elemento que queremos localizar. 
+
+Mas e em cenários onde não sabemos o quanto de memória está sendo alocada? Por exemplo, em uma aplicação podemos presumir que um milhão de inputs seja o suficiente para cada usuário alocar em uma Array. Mas e se esse usuário só precisar de 20% desse espaço? Vamos estar desperdiçando bastante memória.
+
+Quando lidamos com dados dinâmicos onde precisamos inserir, realocar ou deletar um elemento no início ou no meio dessa Array também é um desafio, pois precisaríamos checar se tem espaço para esse novo elemento, realocar todos os outros e isso definitivamente demandaria tempo, paciência e riscos.
+
+
+### <b>O que é uma Linked List e como ela pode solucionar isso?</b>
+
+Linked List é uma estrutura de dados linear composta por várias células, formando uma lista encadeada ou "chain", onde se é armazenado um conjunto de nós (nodes) ligados um ao outro, formando uma sequência dinâmica.
+
+![alt text](https://codeforwin.org/wp-content/uploads/2015/09/Linked-list-nodes.png)
+
+- Os elementos podem ser inseridos e removidos em tempo constante.
+- Não desperdiça memória com o que não é utilizado.
+
+### <b>Quando usar uma Linked List?</b>
+
+- Quando você não sabe a quantidade de itens na Array.
+- Quando você não precisa de acesso aleatório aos elementos (diferente da Array, aqui você não consegue acessar o elemento partindo do index).
+- Quando você está lidando com dados dinâmicos e precisa inserir, deletar ou realocar elementos.
+
+
 ---
-jupyter:
-  kernelspec:
-    display_name: Python 3
-    language: python
-    name: python3
-  language_info:
-    codemirror_mode:
-      name: ipython
-      version: 3
-    file_extension: .py
-    mimetype: text/x-python
-    name: python
-    nbconvert_exporter: python
-    pygments_lexer: ipython3
-    version: 3.11.2
-  nbformat: 4
-  nbformat_minor: 2
-  orig_nbformat: 4
----
 
-::: {.cell .markdown}
-# Linked Lists
-
-------------------------------------------------------------------------
-:::
-
-::: {.cell .markdown}
-As linguagens de programação oferecem diferentes maneiras de armazenar e
-acessar dados. Exemplos comuns são as arrays, listas, mapas, entre
-outros.
-
-Através delas, armazenamos os elementos em localizações de memória
-contínua, ou seja, qualquer elemento em uma Array pode ser localizado em
-tempo constante O(1), com menor complexidade e, consequentemente,
-oferecendo rapidez e possibilitando o menor tempo de busca possível.
-Isso é, enquanto soubermos examente o index do elemento que queremos
-localizar.
-
-Mas e em cenários onde não sabemos o quanto de memória está sendo
-alocada? Por exemplo, em uma aplicação podemos presumir que um milhão de
-inputs seja o suficiente para cada usuário alocar em uma Array. Mas e se
-esse usuário só precisar de 20% desse espaço? Vamos estar desperdiçando
-bastante memória.
-
-Quando lidamos com dados dinâmicos onde precisamos inserir, realocar ou
-deletar um elemento no início ou no meio dessa Array também é um
-desafio, pois precisaríamos checar se tem espaço para esse novo
-elemento, realocar todos os outros e isso definitivamente demandaria
-tempo, paciência e riscos.
-
-### `<b>`{=html}O que é uma Linked List e como ela pode solucionar isso?`</b>`{=html}
-
-Linked List é uma estrutura de dados linear composta por várias células,
-formando uma lista encadeada ou \"chain\", onde se é armazenado um
-conjunto de nós (nodes) ligados um ao outro, formando uma sequência
-dinâmica.
-
-![alt
-text](vertopal_46d4d205521f4ad9b08e7f442cafe00c/abcad7410db705ff86f41180931353c72539e303.png)
-
--   Os elementos podem ser inseridos e removidos em tempo constante.
--   Não desperdiça memória com o que não é utilizado.
-
-### `<b>`{=html}Quando usar uma Linked List?`</b>`{=html}
-
--   Quando você não sabe a quantidade de itens na Array.
--   Quando você não precisa de acesso aleatório aos elementos (diferente
-    da Array, aqui você não consegue acessar o elemento partindo do
-    index).
--   Quando você está lidando com dados dinâmicos e precisa inserir,
-    deletar ou realocar elementos.
-
-------------------------------------------------------------------------
-:::
-
-::: {.cell .markdown}
-## `<b>`{=html}Impletementação da classe Node`</b>`{=html}
+## Impletementação da classe Node
 
 Como ilustrado na imagem acima, temos em mente que o objeto Node tem
 duas partes principais: um valor e o endereço.
@@ -87,16 +37,15 @@ Uma observação importante é que o valor None representa que, de fato,
 não existe um próximo objeto Node.
 :::
 
-::: {.cell .code execution_count="5"}
+
 ``` python
 class Node:
     def __init__(self, value):
         self.value = value
         self.next = None
 ```
-:::
 
-::: {.cell .markdown}
+
 Agora vamos definir algumas funções básicas, sendo elas:
 
      | insert_node_to_tail(node)  | Para inserir um novo elemento após o último nó da lista.   | 
@@ -104,9 +53,9 @@ Agora vamos definir algumas funções básicas, sendo elas:
      | is_empty()                 | Checa se a lista está vazia.                               | 
      | head()                     | Retorna o primeiro elemento da lista.                      | 
      | tail()                     | Retorna o último elemento da lista.                        | 
-:::
 
-::: {.cell .code execution_count="6"}
+
+
 ``` python
 class LinkedList:                            # Primeiro passo | Criando a classe e indentando o primeiro node nulo (Head) 
     def __init__(self):
@@ -136,9 +85,7 @@ class LinkedList:                            # Primeiro passo | Criando a classe
         return pointer
         
 ```
-:::
 
-::: {.cell .markdown}
 
 ------------------------------------------------------------------------
 
