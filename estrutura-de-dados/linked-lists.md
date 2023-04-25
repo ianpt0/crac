@@ -89,7 +89,7 @@ class LinkedList:                            # Primeiro passo | Criando a classe
 ------------------------------------------------------------------------
 
 <p>E é isso! Implementamos nossa Linked List com suas funções básicas, além
-de entendemos quando usar e também quais problemas ela resolve.</p>
+de entendermos quando usar e também quais problemas ela resolve.</p>
 
 <p>Espero que tenham curtido e aprendido um pouco mais sobre estrutura de
 dados. Até a próxima!</p>
