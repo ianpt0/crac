@@ -1,15 +1,15 @@
-As linguagens de programação oferecem diferentes maneiras de armazenar e acessar dados. Exemplos comuns são as arrays, listas, mapas, entre outros.
+<p>As linguagens de programação oferecem diferentes maneiras de armazenar e acessar dados. Exemplos comuns são as arrays, listas, mapas, entre outros.</p>
 
-Através delas, armazenamos os elementos em localizações de memória contínua, ou seja, qualquer elemento em uma Array pode ser localizado em tempo constante O(1), com menor complexidade e, consequentemente, oferecendo rapidez e possibilitando o menor tempo de busca possível. Isso é, enquanto soubermos examente o index do elemento que queremos localizar. 
+<p>Através delas, armazenamos os elementos em localizações de memória contínua, ou seja, qualquer elemento em uma Array pode ser localizado em tempo constante O(1), com menor complexidade e, consequentemente, oferecendo rapidez e possibilitando o menor tempo de busca possível. Isso é, enquanto soubermos examente o index do elemento que queremos localizar.</p> 
 
-Mas e em cenários onde não sabemos o quanto de memória está sendo alocada? Por exemplo, em uma aplicação podemos presumir que um milhão de inputs seja o suficiente para cada usuário alocar em uma Array. Mas e se esse usuário só precisar de 20% desse espaço? Vamos estar desperdiçando bastante memória.
+<p>Mas e em cenários onde não sabemos o quanto de memória está sendo alocada? Por exemplo, em uma aplicação podemos presumir que um milhão de inputs seja o suficiente para cada usuário alocar em uma Array. Mas e se esse usuário só precisar de 20% desse espaço? Vamos estar desperdiçando bastante memória.</p>
 
-Quando lidamos com dados dinâmicos onde precisamos inserir, realocar ou deletar um elemento no início ou no meio dessa Array também é um desafio, pois precisaríamos checar se tem espaço para esse novo elemento, realocar todos os outros e isso definitivamente demandaria tempo, paciência e riscos.
+<p>Quando lidamos com dados dinâmicos onde precisamos inserir, realocar ou deletar um elemento no início ou no meio dessa Array também é um desafio, pois precisaríamos checar se tem espaço para esse novo elemento, realocar todos os outros e isso definitivamente demandaria tempo, paciência e riscos.</p>
 
 
 ### <b>O que é uma Linked List e como ela pode solucionar isso?</b>
 
-Linked List é uma estrutura de dados linear composta por várias células, formando uma lista encadeada ou "chain", onde se é armazenado um conjunto de nós (nodes) ligados um ao outro, formando uma sequência dinâmica.
+<p>Linked List é uma estrutura de dados linear composta por várias células, formando uma lista encadeada ou "chain", onde se é armazenado um conjunto de nós (nodes) ligados um ao outro, formando uma sequência dinâmica.</p>
 
 ![alt text](https://codeforwin.org/wp-content/uploads/2015/09/Linked-list-nodes.png)
 
@@ -88,11 +88,11 @@ class LinkedList:                            # Primeiro passo | Criando a classe
 
 ------------------------------------------------------------------------
 
-E é isso! Implementamos nossa Linked List com suas funções básicas, além
-de entendemos quando usar e também quais problemas ela resolve.
+<p>E é isso! Implementamos nossa Linked List com suas funções básicas, além
+de entendemos quando usar e também quais problemas ela resolve.</p>
 
-Espero que tenham curtido e aprendido um pouco mais sobre estrutura de
-dados. Até a próxima!
+<p>Espero que tenham curtido e aprendido um pouco mais sobre estrutura de
+dados. Até a próxima!</p>
 
 ------------------------------------------------------------------------
 
